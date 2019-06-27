@@ -1,0 +1,14 @@
+# 忽略编译文件
+*.class
+
+# 忽略打包文件
+*.jar
+*.war
+*.ear
+target/
+
+# 忽略测试文件
+src/test/
+
+# 忽略.idea
+.idea

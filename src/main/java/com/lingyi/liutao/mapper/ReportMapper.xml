@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingyi.liutao.mapper.ReportMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lingyi.liutao.bean.Report">
+        <result column="r_id" property="rId" />
+        <result column="rt_id" property="rtId" />
+        <result column="r_context" property="rContext" />
+        <result column="pltf_id" property="pltfId" />
+        <result column="o_id" property="oId" />
+        <result column="dfdt_id" property="dfdtId" />
+        <result column="r_Status" property="rStatus" />
+        <result column="m_id" property="mId" />
+        <result column="r_result" property="rResult" />
+        <result column="r_rescontext" property="rRescontext" />
+        <result column="delflag" property="delflag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        r_id, rt_id, r_context, pltf_id, o_id, dfdt_id, r_Status, m_id, r_result, r_rescontext, delflag
+    </sql>
+
+</mapper>

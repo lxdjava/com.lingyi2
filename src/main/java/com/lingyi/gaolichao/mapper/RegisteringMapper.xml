@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingyi.gaolichao.mapper.RegisteringMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lingyi.gaolichao.bean.Registering">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="pwd" property="pwd" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="chatname" property="chatname" />
+        <result column="market" property="market" />
+        <result column="shopname" property="shopname" />
+        <result column="who" property="who" />
+        <result column="delflag" property="delflag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        name, pwd, phone, email, chatname, market, shopname, who, delflag, id
+    </sql>
+
+</mapper>

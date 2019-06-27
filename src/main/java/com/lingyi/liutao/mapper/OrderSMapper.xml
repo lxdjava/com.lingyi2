@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingyi.liutao.mapper.OrderSMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lingyi.liutao.bean.OrderS">
+        <id column="o_id" property="oId" />
+        <result column="s_id" property="sId" />
+        <result column="w_credit" property="wCredit" />
+        <result column="o_times" property="oTimes" />
+        <result column="o_done" property="oDone" />
+        <result column="o_cost" property="oCost" />
+        <result column="o_time" property="oTime" />
+        <result column="o_lasttime" property="oLasttime" />
+        <result column="o_keyword" property="oKeyword" />
+        <result column="o_pic" property="oPic" />
+        <result column="o_wholename" property="oWholename" />
+        <result column="o_url" property="oUrl" />
+        <result column="o_gprice" property="oGprice" />
+        <result column="o_pledge" property="oPledge" />
+        <result column="o_status" property="oStatus" />
+        <result column="market" property="market" />
+        <result column="delflag" property="delflag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        o_id, s_id, w_credit, o_times, o_done, o_cost, o_time, o_lasttime, o_keyword, o_pic, o_wholename, o_url, o_gprice, o_pledge, o_status, market, delflag
+    </sql>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingyi.liutao.mapper.WorkerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lingyi.gaolichao.bean.Worker">
+        <id column="w_id" property="wId" />
+        <result column="w_name" property="wName" />
+        <result column="w_pwd" property="wPwd" />
+        <result column="w_phone" property="wPhone" />
+        <result column="w_email" property="wEmail" />
+        <result column="delflag" property="delflag" />
+        <result column="inputtime" property="inputtime" />
+        <result column="credit" property="credit" />
+        <result column="money" property="money" />
+        <result column="fmoney" property="fmoney" />
+        <result column="viplevel" property="viplevel" />
+        <result column="blacklist" property="blacklist" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        w_id, w_name, w_pwd, w_phone, w_email, delflag, inputtime, credit, money, fmoney, viplevel, blacklist
+    </sql>
+
+</mapper>

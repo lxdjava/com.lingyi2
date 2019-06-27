@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingyi.gaolichao.mapper.SellerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lingyi.gaolichao.bean.Seller">
+        <id column="s_id" property="sId" />
+        <result column="s_name" property="sName" />
+        <result column="s_pwd" property="sPwd" />
+        <result column="s_phone" property="sPhone" />
+        <result column="s_email" property="sEmail" />
+        <result column="delflag" property="delflag" />
+        <result column="inputtime" property="inputtime" />
+        <result column="credit" property="credit" />
+        <result column="money" property="money" />
+        <result column="fmoney" property="fmoney" />
+        <result column="viplevel" property="viplevel" />
+        <result column="blacklist" property="blacklist" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        s_id, s_name, s_pwd, s_phone, s_email, delflag, inputtime, credit, money, fmoney, viplevel, blacklist
+    </sql>
+
+</mapper>
